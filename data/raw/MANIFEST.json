@@ -1,0 +1,46 @@
+{
+ "repo": "aims-foundations/measurement-db",
+ "revision": "bc8204d811823da849c6686bf124d4ca9f82e4de",
+ "eligible": [
+  "multi_swebench",
+  "real_webagents",
+  "researchcodebench",
+  "swe_rebench"
+ ],
+ "skipped": {
+  "matharena": {
+   "response_type": "mixed",
+   "granularity": "item"
+  },
+  "mmdocrag": {
+   "response_type": "fraction",
+   "granularity": "item"
+  }
+ },
+ "tables": {
+  "multi_swebench": [
+   "benchmarks",
+   "subjects",
+   "items",
+   "response"
+  ],
+  "real_webagents": [
+   "benchmarks",
+   "subjects",
+   "items",
+   "response"
+  ],
+  "researchcodebench": [
+   "benchmarks",
+   "subjects",
+   "items",
+   "response"
+  ],
+  "swe_rebench": [
+   "benchmarks",
+   "subjects",
+   "items",
+   "response"
+  ]
+ }
+}

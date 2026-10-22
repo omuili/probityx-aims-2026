@@ -1,0 +1,65 @@
+# Python environment / caches
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Competition data
+data/raw/*
+!data/raw/MANIFEST.json
+data/cache/
+data/download.log
+
+# Build/package artifacts
+dist/
+build/
+*.egg-info/
+*.zip
+
+# Third-party checkout
+third_party/
+
+# Submission/runtime caches
+submissions/*/__pycache__/
+
+# LaTeX temporary files
+report/*.aux
+report/*.log
+report/*.out
+report/*.toc
+report/*.synctex.gz
+
+# Raw/intermediate experiment artifacts
+reports/**/*_run.log
+reports/**/*_predictions.csv
+reports/**/*_pairs.csv
+reports/**/*_folds.csv
+reports/**/*_selection.csv
+reports/**/*_coverage.csv
+reports/**/*SUPERSEDED*
+
+# Secrets / local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+service-account*.json
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+# Internal planning files
+**/PLAN_v2*
+report/
+
+# Reports and generated results
+report/
+reports/
