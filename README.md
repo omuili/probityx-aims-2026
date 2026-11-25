@@ -51,8 +51,11 @@ mkdir -p reports/final                               # final_summary.py expects 
 .venv/bin/python scripts/phase4_h3_local.py          # local smoother -> reports/phase4/h3_*
 .venv/bin/python scripts/final_summary.py            # reports/final/summary_table.csv and learning_curves.png
 .venv/bin/python scripts/make_learning_curves.py learning_curves.pdf  # Figure 1 of the report
+.venv/bin/python scripts/phase5_oracle_lto.py         # other-subjects oracle and requirement curve -> reports/phase5/oracle_lto*
+.venv/bin/python scripts/phase5_split_seeds.py        # split seeds 0, 1, 2 for B0, B1, B2 -> reports/phase5/split_seeds*
+.venv/bin/python scripts/phase5_cluster_bootstrap.py  # cluster-aware CIs, per-benchmark deltas -> reports/phase5/cluster_bootstrap*
 ```
-Seeds: split seed 0; candidate-order seeds 0, 1, 2; bootstrap seed 0. Selection statistic everywhere: pooled equal-per-pair ALC
+Seeds: split seed 0 (1 and 2 in `phase5_split_seeds.py`); candidate-order seeds 0, 1, 2; bootstrap seed 0. Selection statistic everywhere: pooled equal-per-pair ALC
 over the 140 held-out pairs under leave-one-benchmark-out.
 
 ## Codabench package
